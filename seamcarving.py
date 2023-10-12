@@ -63,7 +63,7 @@ class SeamCarving:
                 drop_mask=d_mask
             )
             results.append(torch.from_numpy(dst))
-        return (results,)
+        return (torch.stack(results),)
 
 def resize(image, size):
     if image.size()[-2:] == size:
