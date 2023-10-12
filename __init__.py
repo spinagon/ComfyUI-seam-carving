@@ -1,4 +1,4 @@
-from .SeamCarving import SeamCarving
+from .seamcarving import SeamCarving
 
 NODE_CLASS_MAPPINGS = {
     "SeamCarving": SeamCarving,
