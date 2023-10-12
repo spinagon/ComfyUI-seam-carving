@@ -34,5 +34,6 @@ class SeamCarving:
                 order="width-first",  # choose from {width-first, height-first}
                 keep_mask=None,  # object mask to protect from removal
             )
-            results.append(torch.from_numpy(dst.astype(np.float32) / 255))
+            print(dst.dtype)
+            results.append(torch.from_numpy(dst.astype(np.float32)))
         return (results,)
