@@ -10,11 +10,11 @@ class SeamCarving:
                 "pixels": ("IMAGE",),
                 "width": (
                     "INT",
-                    {"default": 512, "min": 1, "max": 4096, "step": 64},
+                    {"default": 512},
                 ),
                 "height": (
                     "INT",
-                    {"default": 512, "min": 1, "max": 4096, "step": 64},
+                    {"default": 512},
                 ),
             }
         }
@@ -34,6 +34,5 @@ class SeamCarving:
                 order="width-first",  # choose from {width-first, height-first}
                 keep_mask=None,  # object mask to protect from removal
             )
-            print(dst.dtype)
-            results.append(torch.from_numpy(dst.astype(np.float32)))
+            results.append(torch.from_numpy(dst))
         return (results,)
