@@ -60,7 +60,8 @@ class SeamCarving:
                 energy_mode="forward",  # choose from {backward, forward}
                 order="width-first",  # choose from {width-first, height-first}
                 keep_mask=k_mask,  # object mask to protect from removal
-                drop_mask=d_mask
+                drop_mask=d_mask,
+                step_ratio=0.1
             )
             results.append(torch.from_numpy(dst))
         return (torch.stack(results),)
