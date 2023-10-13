@@ -17,7 +17,7 @@ class SeamCarving:
                     {"default": 512},
                 ),
             },
-            "oprional": {
+            "optional": {
                 "keep_mask": ("MASK",),
                 "drop_mask": ("MASK",),
             }
