@@ -10,6 +10,6 @@ Repository = "https://github.com/spinagon/ComfyUI-seam-carving"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "spinagon"
 DisplayName = "ComfyUI-seam-carving"
 Icon = ""
